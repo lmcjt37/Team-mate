@@ -1,0 +1,38 @@
+{
+  "name": "team-mate",
+  "version": "1.0.0",
+  "description": "Platform for the fitness industry",
+  "main": "Platform/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run db && npm run server",
+    "server": "cd ./Platform && strapi start",
+    "database": "mongod --dbpath ./data/db/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmcjt37/Team-mate.git"
+  },
+  "keywords": [
+    "Node",
+    "React",
+    "Strapi"
+  ],
+  "contributors": [
+      {
+        "name" : "Luke Taylor",
+        "email" : "lmcjt@outlook.com",
+        "url" : "http://lmcjt.com/"
+    },
+    {
+        "name": "Luke Steadman",
+        "email": "",
+        "url": ""
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmcjt37/Team-mate/issues"
+  },
+  "homepage": "https://github.com/lmcjt37/Team-mate#readme"
+}
