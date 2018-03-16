@@ -8,5 +8,5 @@ Platform for the fitness industry
 
 ## Getting Started
 
-- Run `npm start` (spins up MongoDB and Strapi in parallel).
+- Run `npm i && npm start` (spins up MongoDB and Strapi in parallel).
 - Go to [http://localhost:1337/admin/](http://localhost:1337/admin/) to create first super user within admin portal.
