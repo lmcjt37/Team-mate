@@ -2,11 +2,11 @@
   "name": "team-mate",
   "version": "1.0.0",
   "description": "Platform for the fitness industry",
-  "main": "Platform/server.js",
+  "main": "platform/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parallelshell 'npm run db' 'npm run server'",
-    "server": "cd ./Platform && strapi start",
+    "server": "cd ./platform && strapi start",
     "db": "mongod --dbpath ./data/db/"
   },
   "repository": {
