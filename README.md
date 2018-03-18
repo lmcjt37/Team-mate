@@ -10,5 +10,23 @@ Platform for the fitness industry
 
 ## Getting Started
 
-- Run `npm i && npm start` (spins up MongoDB and Strapi in parallel).
+- Install dependencies - `npm install`
+- Start up MongoDB and Strapi admin server with `npm start`
 - Go to [http://localhost:1337/admin/](http://localhost:1337/admin/) to create first super user within admin portal.
+
+## Gatsby static site
+
+- Install Gatsby `npm i -g gatsby-cli`
+- `cd site/ && npm i`
+
+#### development
+
+`npm run develop`
+
+This will serve up a dev server with hot reload locally at [http://localhost:8000/](http://localhost:8000/)
+
+#### production
+
+`npm run deploy`
+
+This will build the static site and assets for hosting on Github Pages.
