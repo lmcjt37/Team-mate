@@ -1,5 +1,7 @@
-# Team-mate
+# Team-mate (TBC)
 Platform for the fitness industry
+
+[Trello board](https://trello.com/b/Id8D0FSB/team-mate)
 
 ## Dependencies
 
