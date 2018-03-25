@@ -2,19 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
+import { siteMetadata as config } from '../../gatsby-config'
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'simple-line-icons/css/simple-line-icons.css'
+import 'font-awesome/css/font-awesome.css'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Team-mate - register platform interest"
+      title={config.title}
       meta={[
-        { name: 'description', content: 'Register your interest for the Team-mate platform' },
-        { name: 'keywords', content: 'fitness, athlete, trainer, meetup, sessions, groupwork' },
+        { name: 'description', content: `${config.description}` },
+        { name: 'keywords', content: `${config.keywords}` },
       ]}
     />
-    <Header />
     <div
       style={{
         margin: '0 auto',

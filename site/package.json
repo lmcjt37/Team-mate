@@ -1,22 +1,32 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "team-mate-starter",
+  "description": "Fitness industry platform for connecting people",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Luke Taylor <lmcjt@outlook.com>",
   "dependencies": {
-    "gatsby": "^1.9.236",
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "gatsby": "^1.9.238",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^2.0.8",
-    "react-helmet": "^5.2.0"
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-popper": "^0.8.3",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^5.0.0-beta.3",
+    "simple-line-icons": "^2.4.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "starter"
   ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
