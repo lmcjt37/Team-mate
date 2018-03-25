@@ -12,7 +12,7 @@ import {
 
 import { siteMetadata as config } from '../../../gatsby-config'
 
-export default class Header extends Component {
+class Header extends Component {
   constructor(props) {
     super(props);
 
@@ -30,7 +30,7 @@ export default class Header extends Component {
 
   render() {
     return (
-      <Navbar id="mainNav" color="faded" light expand="md">
+      <Navbar id="mainNav" color="faded" light fixed="top" expand="md">
         <Container>
           <NavbarBrand href="#page-top">{config.title}</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -52,3 +52,5 @@ export default class Header extends Component {
     )
   }
 }
+
+export default Header

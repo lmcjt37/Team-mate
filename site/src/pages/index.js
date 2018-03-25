@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Header from "../components/Header";
+import Sections from "../components/Sections";
 import Footer from "../components/Footer";
 
 class IndexPage extends Component {
@@ -12,7 +13,7 @@ class IndexPage extends Component {
     return (
       <div>
         <Header/>
-        <h1>Hi people</h1>
+        <Sections/>
         <Footer/>
       </div>
     )
