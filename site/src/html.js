@@ -29,6 +29,7 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
         </body>
+
       </html>
     )
   }
