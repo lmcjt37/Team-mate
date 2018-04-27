@@ -29,7 +29,7 @@ class Masthead extends Component {
                 <div className="device-mockup iphone6_plus portrait white">
                   <div className="device">
                     <div className="screen">
-                      <img src="img/demo-screen-1.jpg" className="img-fluid" alt=""/>
+                      <img src="/images/demo-screen-1.jpg" className="img-fluid" alt=""/>
                     </div>
                     <div className="button">
                     </div>

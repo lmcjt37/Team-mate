@@ -30,7 +30,7 @@ class Header extends Component {
 
   render() {
     return (
-      <Navbar id="mainNav" color="faded" light fixed="top" expand="md">
+      <Navbar id="mainNav" light fixed="top" expand="md">
         <Container>
           <NavbarBrand href="#page-top">{config.title}</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
