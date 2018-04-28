@@ -15,7 +15,7 @@ class Features extends Component {
 
   render() {
     return (
-      <section className="features" id="features">
+      <section className="features scrollspy-section" id="features">
         <div className="container">
           <div className="section-heading text-center">
             <h2>Unlimited Features, Unlimited Fun</h2>

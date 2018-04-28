@@ -7,8 +7,9 @@ import { siteMetadata as config } from '../../gatsby-config'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'simple-line-icons/css/simple-line-icons.css'
 import 'font-awesome/css/font-awesome.css'
-import './index.css'
+
 import './device-mockups/device-mockups.min.css'
+import './index.css'
 import './main.js'
 
 const TemplateWrapper = ({ children }) => (

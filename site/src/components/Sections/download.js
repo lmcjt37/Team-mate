@@ -15,7 +15,7 @@ class Download extends Component {
 
   render() {
     return (
-      <section className="download bg-primary text-center" id="download">
+      <section className="download bg-primary text-center scrollspy-section" id="download">
         <div className="container">
           <div className="row">
             <div className="col-md-8 mx-auto">

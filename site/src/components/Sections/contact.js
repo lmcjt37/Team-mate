@@ -15,7 +15,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <section className="contact bg-primary" id="contact">
+      <section className="contact bg-primary scrollspy-section" id="contact">
         <div className="container">
           <h2>We
             <i className="fa fa-heart"></i>
