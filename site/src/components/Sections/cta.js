@@ -15,7 +15,7 @@ class CTA extends Component {
 
   render() {
     return (
-      <section className="cta">
+      <section className="cta scrollspy-section" id="register">
         <div className="cta-content">
           <div className="container">
             <h2>Stop waiting.<br/>Start building.</h2>

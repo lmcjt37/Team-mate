@@ -1,6 +1,26 @@
 window.onload = function() {
+  var section = document.querySelectorAll(".scrollspy-section"),
+    mainNav = document.getElementById("mainNav"),
+    offset = mainNav.offsetHeight,
+    sections = {};
+
+  Array.prototype.forEach.call(section, function(e) {
+    sections[e.id] = {
+      start: e.offsetTop - offset,
+      end: (e.offsetTop + e.offsetHeight) - offset
+    };
+
+    document.querySelector('a[href*=' + e.id + ']:not([href="#"]').addEventListener("click", function(evt) {
+      window.scroll({
+        top: sections[e.id].start,
+        left: 0,
+        behavior: 'smooth'
+      });
+      evt.preventDefault();
+    });
+  });
+
   var navbarCollapse = function() {
-    var mainNav = document.getElementById("mainNav");
     if (window.pageYOffset > mainNav.offsetTop) {
       mainNav.classList.add("navbar-shrink");
     } else {
@@ -8,17 +28,6 @@ window.onload = function() {
     }
   };
   navbarCollapse();
-
-  // scroll spy
-  var section = document.querySelectorAll(".scrollspy-section");
-  var sections = {};
-
-  Array.prototype.forEach.call(section, function(e) {
-    sections[e.id] = {
-      start: e.offsetTop,
-      end: e.offsetTop + e.offsetHeight
-    };
-  });
 
   var scrollSpy = function() {
     var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
@@ -30,7 +39,6 @@ window.onload = function() {
       }
     }
   }
-  // scroll spy end
 
   window.addEventListener('scroll', function() {
     navbarCollapse();
