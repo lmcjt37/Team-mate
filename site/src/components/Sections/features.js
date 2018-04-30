@@ -25,7 +25,7 @@ class Features extends Component {
           <div className="row">
             <div className="col-lg-4 my-auto">
               <div className="device-container">
-                <div className="device-mockup iphone6_plus portrait white">
+                <div className="device-mockup galaxy_s5 portrait white">
                   <div className="device">
                     <div className="screen">
                       <img src="/images/demo-screen-1.jpg" className="img-fluid" alt=""/>
